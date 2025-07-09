@@ -6,8 +6,9 @@ terraform {
     }
   }
 }
-  provider "ldap" {
-  ldap_url           = "ldap://ldap.forumsys.com"
-  ldap_bind_dn       = "cn=read-only-admin,dc=example,dc=com" 
-  ldap_bind_password = "password"
+provider "ldap" {
+  ldap_url             = "ldap://ipa.demo1.freeipa.org"
+  ldap_bind_dn         = "uid=admin,cn=users,cn=accounts,dc=demo1,dc=freeipa,dc=org"
+  ldap_bind_password   = "Secret123"
+  #insecure_skip_verify = true  # Required for self-signed certs
 }

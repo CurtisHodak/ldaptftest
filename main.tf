@@ -1,5 +1,5 @@
 resource "ldap_object" "example" {
-  dn             = "cn=example,dc=example,dc=com"
+  dn             = "cn=example,dc=example,dc=org"
   object_classes = ["person"]
   attributes = {
     cn           = ["example"]
