@@ -7,7 +7,7 @@ terraform {
   }
 }
   provider "ldap" {
-  ldap_url           = "ldaps://ldap.forumsys.com "
+  ldap_url           = "ldap://ldap.forumsys.com"
   ldap_bind_dn       = "cn=read-only-admin,dc=example,dc=com" 
   ldap_bind_password = "password"
 }
